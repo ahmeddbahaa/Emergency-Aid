@@ -1,0 +1,130 @@
+/* ----- GLOBAL PROPS START ----- */
+:root {
+    --fontColor: #f2f2f2;
+    --font2ndColor: #999999;
+    --mainColor: #e5890a;
+    --main2ndColor: #9d5c0d;
+    --main3rdColor: #3a3a3a;
+}
+
+::selection {
+    background: var(--main2ndColor);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    font-family: "Century Gothic";
+    font-weight: 300;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--fontColor);
+    background-color: rgb(255, 255, 255);
+}
+
+.display-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.content-fit {
+    padding: 10px 0;
+    margin: 0 160px;
+    min-height: 60vh;
+}
+
+.content-loader {
+    margin: 0 50px;
+}
+
+.prevent-drag {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+/* ----- GLOBAL PROPS END ----- */
+
+/* -------------------------------------------------------- */
+.section-header {
+    text-align: center;
+}
+
+.section-header .header1 {
+    color: blue;
+}
+.section-header .header2 {
+    color: grey;
+}
+/* -------------------------------------------------------- */
+/* ----- HOME ROUT START ----- */
+.home-wrapper .home-section .home-img {
+    position: absolute;
+    width: 100%;
+    top: -100px;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.home-section .section-container {
+    position: relative;
+    text-align: left;
+    width: 50%;
+    height: 50%;
+    padding: 300px 200px 0 200px;
+}
+
+.home-wrapper .info-cards {
+    position: relative;
+    top: 100px;
+    gap: 20px;
+}
+
+.services .services-cards {
+    gap: 30px;
+    position: relative;
+}
+
+.info-section {
+    height: 100vh;
+    background-color: blue;
+    width: 100%;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.info-section .doc-img {
+    height: 100vh;
+}
+/* ----- HOME ROUT END ----- */
+/* -------------------------------------------------------- */
+/* ----- FOOTER START ----- */
+.footer-section {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    margin-top: 60px;
+    background-color: var(--main3rdColor);
+    z-index: 99;
+}
+
+.footer-section .footer-wrapper {
+    padding: 50px 0;
+}
+
+/* ----- FOOTER END ----- */
+/* -------------------------------------------------------- */

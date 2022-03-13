@@ -12,7 +12,7 @@ const PageNotFound = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        document.title = "Page Not Found | Henry Golden Cinema";
+        document.title = "Page Not Found | Emergency First Aid";
     });
     return (
         <section className="not-found-route">

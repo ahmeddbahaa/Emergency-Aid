@@ -33,7 +33,7 @@ const Register = () => {
     );
 
     useEffect(() => {
-        document.title = "Register | Henry Golden Cinema";
+        document.title = "Register | Emergency First Aid";
     });
 
     useEffect(() => {

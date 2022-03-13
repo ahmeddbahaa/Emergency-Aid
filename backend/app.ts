@@ -8,23 +8,15 @@ import { errorHandler } from './src/middlewares/error-handler';
 import apiRouter from './src/components/routes';
 import morganMiddleware from './src/middlewares/morgan';
 
+const http = require('http');
 const app = express();
-const server = require('http').Server(app);
-const io = require('socket.io')(server);
-app.use(express.json());
-app.use(morganMiddleware);
-
-app.get('/', (req: Request, res: Response): void => {
-  res.send('Welcome to the home page!');
+const server = http.createServer(app);
+const io = require('socket.io')(server, {
+  cors: {
+    origin: 'http://localhost:3000',
+    methods: [ 'GET', 'POST' ],
+  },
 });
-
-app.use(apiRouter);
-
-app.all('*', async (req, res) => {
-  res.status(404).send('Not Found!');
-});
-
-app.use(errorHandler);
 
 io.on('connection', (socket) => {
   socket.emit('me', socket.id);
@@ -43,4 +35,19 @@ io.on('connection', (socket) => {
   });
 });
 
-export default app;
+app.use(express.json());
+app.use(morganMiddleware);
+
+app.get('/', (req: Request, res: Response): void => {
+  res.send('Welcome to the home page!');
+});
+
+app.use(apiRouter);
+
+app.all('*', async (req, res) => {
+  res.status(404).send('Not Found!');
+});
+
+app.use(errorHandler);
+
+export default server;

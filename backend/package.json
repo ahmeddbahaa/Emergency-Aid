@@ -7,7 +7,7 @@
     "start": "ts-node index.ts",
     "start:watch": "ts-node-dev index.ts",
     "start:prod": "node dist/index.js",
-    "build": "rm -rf ./dist/* && tsc --build && cp .env ./dist && cd ./dist && zip -r Archive.zip . && cd ..",
+    "build": "rm -rf ./dist/* && tsc --build && cd ./dist && zip -r Archive.zip . && cd ..",
     "migrate:up": "db-migrate up",
     "migrate:down": "db-migrate down",
     "migrate:reset": "db-migrate reset",

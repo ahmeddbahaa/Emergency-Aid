@@ -1,5 +1,5 @@
 {
-  "name": "Emergecy First Aid",
+  "name": "emergency-first-aid-backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
@@ -13,7 +13,8 @@
     "migrate:reset": "db-migrate reset",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
-    "test": "export NODE_ENV=test && npm run migrate:up > /dev/null && jasmine-ts && npm run migrate:reset > /dev/null"
+    "test": "export NODE_ENV=test && npm run migrate:up > /dev/null && jasmine-ts && npm run migrate:reset > /dev/null",
+    "deploy": "no deployement script for now "
   },
   "author": "Ahmed Bahaa",
   "license": "ISC",

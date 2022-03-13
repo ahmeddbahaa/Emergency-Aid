@@ -34,3 +34,7 @@
 [Sun Mar 13 2022] [HTTP] GET /users 1.027 ms
 [Sun Mar 13 2022] [HTTP] POST /users 74.536 ms
 [Sun Mar 13 2022] [HTTP] GET /users 1.247 ms
+[Sun Mar 13 2022] [HTTP] POST /specialists 6.716 ms
+[Sun Mar 13 2022] [HTTP] POST /users 90.151 ms
+[Sun Mar 13 2022] [HTTP] POST /users 71.155 ms
+[Sun Mar 13 2022] [HTTP] POST /users 69.582 ms

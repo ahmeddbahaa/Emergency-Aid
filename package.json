@@ -1,0 +1,31 @@
+{
+  "name": "emergency-first-aid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install":"npm run install:frontend && npm run install:backend",
+    "install:frontend": "cd ./frontend && npm install && cd ..",
+    "install:backend": "cd ./backend && npm install && cd ..",
+    "build":"npm run build:frontend && npm run build:backend",
+    "build:frontend": "cd ./frontend && npm run build && cd ..",
+    "build:backend": "cd ./backend && npm run build && cd ..",
+    "test":" npm run test:frontend && npm run test:backend",
+    "test:frontend": "cd ./frontend && npm run test && cd ..",
+    "test:backend": "cd ./backend && npm run test && cd ..",
+    "deploy":"npm run deploy:frontend && npm run deploy:backend",
+    "deploy:frontend": "cd ./frontend && npm run deploy && cd ..",
+    "deploy:backend": "cd ./backend && npm run deploy && cd .."
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmeddbahaa/Emergency-First-Aid.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmeddbahaa/Emergency-First-Aid/issues"
+  },
+  "homepage": "https://github.com/ahmeddbahaa/Emergency-First-Aid#readme"
+}

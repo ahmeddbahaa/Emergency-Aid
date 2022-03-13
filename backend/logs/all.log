@@ -92,3 +92,13 @@
 [Sun Mar 13 2022] [HTTP] GET /socket.io/?EIO=4&transport=polling&t=N-3DwT4 0.635 ms
 [Sun Mar 13 2022] [HTTP] GET /socket.io/?EIO=4&transport=polling&t=N-3DxhI 0.747 ms
 [Sun Mar 13 2022] [INFO] Listening on port 5000!
+[Sun Mar 13 2022] [HTTP] GET /users 16.187 ms
+[Sun Mar 13 2022] [ERROR] SEQUELIZE ERROR:  column "firstname" of relation "specialists" does not exist
+[Sun Mar 13 2022] [HTTP] POST /specialists 112.310 ms
+[Sun Mar 13 2022] [HTTP] GET /specialists 5.607 ms
+[Sun Mar 13 2022] [ERROR] SEQUELIZE ERROR:  column "specializtion" of relation "specialists" does not exist
+[Sun Mar 13 2022] [HTTP] POST /specialists 5.796 ms
+[Sun Mar 13 2022] [HTTP] GET /specialists 1.605 ms
+[Sun Mar 13 2022] [INFO] Listening on port 5000!
+[Sun Mar 13 2022] [HTTP] POST /specialists 49.764 ms
+[Sun Mar 13 2022] [HTTP] GET /specialists 1.978 ms

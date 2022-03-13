@@ -1,0 +1,19 @@
+[Sun Mar 13 2022] [INFO] Listening on port 3000!
+[Sun Mar 13 2022] [HTTP] GET / 42.876 ms
+[Sun Mar 13 2022] [HTTP] GET /favicon.ico 4.495 ms
+[Sun Mar 13 2022] [HTTP] POST /users 172.238 ms
+[Sun Mar 13 2022] [HTTP] POST /users 119.054 ms
+[Sun Mar 13 2022] [HTTP] POST /users 2.199 ms
+[Sun Mar 13 2022] [HTTP] POST /specialist 3.786 ms
+[Sun Mar 13 2022] [HTTP] POST /users 81.761 ms
+[Sun Mar 13 2022] [HTTP] POST /users 65.225 ms
+[Sun Mar 13 2022] [HTTP] POST /users 60.669 ms
+[Sun Mar 13 2022] [ERROR] SEQUELIZE ERROR:  column "name" of relation "specialists" does not exist
+[Sun Mar 13 2022] [HTTP] POST /specialists 131.634 ms
+[Sun Mar 13 2022] [HTTP] POST /users 79.844 ms
+[Sun Mar 13 2022] [HTTP] POST /users 70.080 ms
+[Sun Mar 13 2022] [HTTP] POST /users 60.561 ms
+[Sun Mar 13 2022] [HTTP] POST /specialists 7.865 ms
+[Sun Mar 13 2022] [HTTP] POST /users 80.949 ms
+[Sun Mar 13 2022] [HTTP] POST /users 69.761 ms
+[Sun Mar 13 2022] [HTTP] POST /users 64.318 ms

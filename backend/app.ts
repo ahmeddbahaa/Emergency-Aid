@@ -4,25 +4,22 @@ import express, { Request, Response } from 'express';
 // without the need to use next() with every route
 import 'express-async-errors';
 
-import { NotFoundError } from './src/errors/not-found-error';
 import { errorHandler } from './src/middlewares/error-handler';
-import routing from './src/components/routes';
-import { currentUser } from './src/middlewares/current-user';
+import apiRouter from './src/components/routes';
 import morganMiddleware from './src/middlewares/morgan';
 
 const app = express();
 app.use(express.json());
-app.use(currentUser);
 app.use(morganMiddleware);
 
 app.get('/', (req: Request, res: Response): void => {
   res.send('Welcome to the home page!');
 });
 
-routing.api(app);
+app.use(apiRouter);
 
 app.all('*', async (req, res) => {
-  throw new NotFoundError();
+  res.status(404).send('Not Found!');
 });
 
 app.use(errorHandler);

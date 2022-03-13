@@ -1,20 +1,10 @@
-import { Express } from 'express';
-import { requireAuth } from '../../middlewares/require-auth';
-import { validateRequest } from '../../middlewares/validate-request';
-
+import express from 'express';
 import UserController from './user.controller';
-import { getUserValidation } from './user.schemas';
 
-const userRouter = (app: Express) => {
+const userRouter = express.Router();
 
-  app.get('/me', requireAuth, UserController.getProfile);
-  app.get('/users', requireAuth, UserController.getUsers);
-  app.get('/users/:id', requireAuth, validateRequest(getUserValidation), UserController.getUser);
-
-  // Auth
-  app.post('/users', UserController.signUp);
-  app.post('/users/login', UserController.login);
-
-};
+userRouter.get('/users',  UserController.getUsers);
+userRouter.get('/users/:id', UserController.getUser);
+userRouter.post('/users', UserController.signUp);
 
 export default userRouter;

@@ -17,3 +17,20 @@
 [Sun Mar 13 2022] [HTTP] POST /users 80.949 ms
 [Sun Mar 13 2022] [HTTP] POST /users 69.761 ms
 [Sun Mar 13 2022] [HTTP] POST /users 64.318 ms
+[Sun Mar 13 2022] [HTTP] POST /specialists 3.800 ms
+[Sun Mar 13 2022] [HTTP] POST /users 96.416 ms
+[Sun Mar 13 2022] [HTTP] POST /users 75.422 ms
+[Sun Mar 13 2022] [HTTP] POST /users 75.552 ms
+[Sun Mar 13 2022] [INFO] Listening on port 3000!
+[Sun Mar 13 2022] [HTTP] GET / 1.469 ms
+[Sun Mar 13 2022] [ERROR] SEQUELIZE ERROR:  relation "users" does not exist
+[Sun Mar 13 2022] [HTTP] GET /users 68.352 ms
+[Sun Mar 13 2022] [ERROR] SEQUELIZE ERROR:  relation "users" does not exist
+[Sun Mar 13 2022] [ERROR] SEQUELIZE ERROR:  relation "users" does not exist
+[Sun Mar 13 2022] [HTTP] POST /users 380.781 ms
+[Sun Mar 13 2022] [ERROR] SEQUELIZE ERROR:  relation "users" does not exist
+[Sun Mar 13 2022] [HTTP] GET /users 6.115 ms
+[Sun Mar 13 2022] [HTTP] POST /users 130.730 ms
+[Sun Mar 13 2022] [HTTP] GET /users 1.027 ms
+[Sun Mar 13 2022] [HTTP] POST /users 74.536 ms
+[Sun Mar 13 2022] [HTTP] GET /users 1.247 ms

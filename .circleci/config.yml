@@ -16,10 +16,6 @@ jobs:
       - run:
           name: building the project
           command: export CI=false && npm run build
-      - run:
-          name: running the project tests
-          command: npm run test
-          
 workflows:
   workflow:                    
     jobs:

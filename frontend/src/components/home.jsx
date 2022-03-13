@@ -1,9 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
@@ -34,11 +31,11 @@ const Home = () => {
                                 component="div"
                                 className="header2"
                             >
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Tenetur quae quis architecto
-                                officia similique error iure ducimus, nobis
-                                rerum hic dolorum culpa reiciendis dicta? Fugit
-                                voluptatibus consequatur ducimus soluta.
+                                You can reach and talk from here to one of the
+                                professional specialists who work with us and
+                                are ready all day to serve you in emergency
+                                situations that need rapid intervention and all
+                                that matters to us is your safety.
                             </Typography>
                         </div>
                         <Button
@@ -59,113 +56,146 @@ const Home = () => {
                                     className="header1"
                                     gutterBottom
                                 >
-                                    Our Service Keeps you carefully
+                                    First aid guides, Free!
                                 </Typography>
                                 <Typography
-                                    variant="h6"
+                                    variant="h7"
                                     component="div"
                                     className="header2"
                                     gutterBottom
                                 >
-                                    A small river named Duden flows by their
-                                    place and supplies.
+                                    Learn first aid by subscribing with us for
+                                    free.
                                 </Typography>
                             </div>
 
                             <div className="subscription-request display-flex flex-row">
                                 <TextField
                                     id="outlined-basic"
-                                    label="Outlined"
+                                    label="Email"
                                     variant="outlined"
                                 />
-                                <Button variant="outlined">Outlined</Button>
+                                <Button variant="outlined">Subscribe</Button>
                             </div>
                         </div>
-                        <div className="info-cards display-flex flex-row">
-                            <Card sx={{ minWidth: 275 }}>
-                                <CardContent>
-                                    <Typography
-                                        sx={{ fontSize: 14 }}
-                                        color="text.secondary"
-                                        gutterBottom
-                                    >
-                                        Word of the Day
-                                    </Typography>
-                                    <Typography variant="h5" component="div">
-                                        hrhrhrh
-                                    </Typography>
-                                    <Typography
-                                        sx={{ mb: 1.5 }}
-                                        color="text.secondary"
-                                    >
-                                        adjective
-                                    </Typography>
-                                    <Typography variant="body2">
-                                        well meaning and kindly.
-                                        <br />
-                                        {'"a benevolent smile"'}
-                                    </Typography>
-                                </CardContent>
-                                <CardActions>
-                                    <Button size="small">Learn More</Button>
-                                </CardActions>
-                            </Card>
-                            <Card sx={{ minWidth: 275 }}>
-                                <CardContent>
-                                    <Typography
-                                        sx={{ fontSize: 14 }}
-                                        color="text.secondary"
-                                        gutterBottom
-                                    >
-                                        Word of the Day
-                                    </Typography>
-                                    <Typography variant="h5" component="div">
-                                        hrhrhrh
-                                    </Typography>
-                                    <Typography
-                                        sx={{ mb: 1.5 }}
-                                        color="text.secondary"
-                                    >
-                                        adjective
-                                    </Typography>
-                                    <Typography variant="body2">
-                                        well meaning and kindly.
-                                        <br />
-                                        {'"a benevolent smile"'}
-                                    </Typography>
-                                </CardContent>
-                                <CardActions>
-                                    <Button size="small">Learn More</Button>
-                                </CardActions>
-                            </Card>
-                            <Card sx={{ minWidth: 275 }}>
-                                <CardContent>
-                                    <Typography
-                                        sx={{ fontSize: 14 }}
-                                        color="text.secondary"
-                                        gutterBottom
-                                    >
-                                        Word of the Day
-                                    </Typography>
-                                    <Typography variant="h5" component="div">
-                                        hrhrhrh
-                                    </Typography>
-                                    <Typography
-                                        sx={{ mb: 1.5 }}
-                                        color="text.secondary"
-                                    >
-                                        adjective
-                                    </Typography>
-                                    <Typography variant="body2">
-                                        well meaning and kindly.
-                                        <br />
-                                        {'"a benevolent smile"'}
-                                    </Typography>
-                                </CardContent>
-                                <CardActions>
-                                    <Button size="small">Learn More</Button>
-                                </CardActions>
-                            </Card>
+                        <div className="plans-section display-flex">
+                            <div className="section-header">
+                                <Typography
+                                    variant="h4"
+                                    component="div"
+                                    className="header1"
+                                    gutterBottom
+                                >
+                                    Want to be Expert? Pick a plan Now!
+                                </Typography>
+                                <Typography
+                                    variant="h7"
+                                    component="div"
+                                    className="header2"
+                                    gutterBottom
+                                >
+                                    We offer you many plans that suit you very
+                                    much.
+                                </Typography>
+                            </div>
+
+                            <div className="plans-wrapper">
+                                <div className="container">
+                                    <div className="cards">
+                                        <div className="card">
+                                            <p className="name">Basic</p>
+                                            <p className="description">
+                                                Here you will learn precautions
+                                                and first aid from scratch to
+                                                reach a good level that enables
+                                                you to deal simple with
+                                                emergency situations.
+                                            </p>
+                                            <h4 className="price">
+                                                <sup className="dollar">$</sup>
+                                                <span id="basic">9</span>
+                                                <span className="cents">
+                                                    .99
+                                                </span>
+                                            </h4>
+                                            <p className="per" id="per">
+                                                Per Month
+                                            </p>
+                                            <p className="long-des">
+                                                This plan will enable you to
+                                                learn a lot. Apply and book now
+                                                and have the fun experience with
+                                                us and save the lives of many
+                                                lives for the people around you.
+                                            </p>
+                                            <div className="button-card">
+                                                <button className="btn">
+                                                    Order Now
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div className="card premium">
+                                            <p className="name">Premium</p>
+                                            <p className="description">
+                                                This plan is interesting and
+                                                contains many details, as it is
+                                                the largest and most complex
+                                                level until you become a
+                                                professional
+                                            </p>
+                                            <h4 className="price">
+                                                <sup className="dollar">$</sup>
+                                                <span id="premium">19</span>
+                                                <span className="cents">
+                                                    .99
+                                                </span>
+                                            </h4>
+                                            <p className="per" id="per">
+                                                Per Month
+                                            </p>
+                                            <p className="long-des">
+                                                This plan will enable you to
+                                                learn a lot. Apply and book now
+                                                and have the fun experience with
+                                                us and save the lives of many
+                                                lives for the people around you.
+                                            </p>
+                                            <div className="button-card">
+                                                <button className="btn">
+                                                    Order Now
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div className="card">
+                                            <p className="name">Premiere</p>
+                                            <p className="description">
+                                                If you do not want to go into
+                                                all the details and you are
+                                                professional enough to learn
+                                                only some specific things, then
+                                                from this plan you can choose a
+                                                specific topic to learnز
+                                            </p>
+                                            <h4 className="price text">
+                                                find features that suits you
+                                            </h4>
+                                            <p className="long-des">
+                                                This plan will enable you to
+                                                learn a lot. Apply and book now
+                                                and have the fun experience with
+                                                us and save the lives of many
+                                                lives for the people around you.
+                                            </p>
+                                            <div className="button-card">
+                                                <button className="btn">
+                                                    Order Now
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

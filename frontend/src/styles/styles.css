@@ -5,10 +5,6 @@
     --main3rdColor: rgb(182, 182, 182);
 }
 
-::selection {
-    background: var(--mainColor);
-}
-
 ::-webkit-scrollbar {
     display: none;
 }
@@ -75,27 +71,13 @@ body {
 }
 /* -------------------------------------------------------- */
 /* ----- HOME ROUT START ----- */
-.home-container .home-section .home-img {
-    position: absolute;
-    width: 100%;
-    top: -100px;
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
 
 .home-section .section-container {
     position: relative;
     text-align: center;
     width: 50%;
     height: 50%;
-    margin: 165px auto;
-}
-
-.home-container .info-cards {
-    position: relative;
-    gap: 60px;
+    margin: 300px auto;
 }
 
 .home-wrapper .info-cards,
@@ -113,21 +95,128 @@ body {
     padding: 40px 0;
 }
 
-.services .services-cards {
-    gap: 30px;
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input,
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root,
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    border-color: rgb(0, 111, 202) !important;
+    color: rgb(0, 111, 202) !important;
+}
+
+.plans-wrapper .cards {
+    display: flex;
+    justify-content: center;
+    padding: 0 2em;
+    margin: 30px auto;
+}
+
+.plans-wrapper .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    min-height: 450px;
+    padding: 20px;
+    margin: 0.6em;
+    width: 320px;
+    background-color: rgb(202, 201, 201);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.plans-wrapper .card .name {
+    font-size: 16px;
+    font-family: "Poppins";
+    background-color: #115ffb2c;
+    font-weight: lighter;
+    padding: 2px 20px;
+    border-radius: 25px;
+    margin: 2em auto;
+}
+
+.plans-wrapper .card p {
+    font-size: 0.75em;
+    padding: 20px 0;
+}
+
+.plans-wrapper .dollar {
+    font-size: 0.6em;
+}
+
+.plans-wrapper .card .price {
+    padding: 10px 0 0 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2196f3;
+    margin-bottom: 0;
+    font-family: "Permanent Marker", cursive;
+}
+.plans-wrapper .card .text {
+    font-weight: normal;
+    font-size: 1.1em;
+    margin: 1.2em auto;
+}
+.plans-wrapper .card .cents {
+    font-size: 0.5em;
+}
+.plans-wrapper .card .per {
+    padding: 0px 0px 15px 0px;
+    line-height: 0;
+}
+
+.plans-wrapper .card .long-des {
+    margin: 15px auto;
+}
+
+.plans-wrapper .card .btn {
+    padding: 10px 15px;
+    border: 1px solid #2196f3;
+    color: #2196f3;
+    background-color: transparent;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.plans-wrapper .card .btn:hover {
+    background-color: #2196f3;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.plans-wrapper .card {
+    transition: 0.5s ease-in-out;
+}
+
+.plans-wrapper .card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+}
+
+.plans-wrapper .card:hover .name {
+    background-color: #115ffbdc;
+    color: #fff;
+}
+
+.plans-wrapper .cards .premium {
     position: relative;
 }
 
-.info-section {
-    height: 100vh;
-    background-color: linear-gradient(to right, #8e54e9, #4776e6);
-    width: 100%;
-    gap: 50px;
-    justify-content: space-between;
-}
-
-.info-section .doc-img {
-    height: 100vh;
+.plans-wrapper .cards .premium:hover::before {
+    content: "Recommended";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 25%;
+    right: 25%;
+    transform: translateX(25%, 25%);
+    background-color: #defef0;
+    color: #02de7f;
+    padding: 14px 6px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 0.6em;
 }
 /* ----- HOME ROUT END ----- */
 /* -------------------------------------------------------- */
@@ -181,9 +270,10 @@ body {
     margin-top: 2rem;
 }
 
-.contact-container .caller {
+.call-container .caller {
     text-align: center;
-    color: var(--main3rdColor);
+    margin: 0 auto;
+    color: white;
 }
 
 /* ----- CALL CONFERENCE END ----- */

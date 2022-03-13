@@ -1,10 +1,14 @@
+import React, { useEffect, useRef, useState } from "react";
+
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import TextField from "@mui/material/TextField";
+import Typography from "@mui/material/Typography";
+
 import AssignmentIcon from "@mui/icons-material/Assignment";
 import PhoneIcon from "@mui/icons-material/Phone";
-import React, { useEffect, useRef, useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+
 import Peer from "simple-peer";
 import io from "socket.io-client";
 
@@ -93,8 +97,21 @@ const CallConference = () => {
 
     return (
         <section className="call-conference-section">
-            <h1 style={{ textAlign: "center", color: "#fff" }}>WEB RTC</h1>
-            <div className="container">
+            <div className="section-header">
+                <Typography
+                    variant="h4"
+                    component="div"
+                    className="header1"
+                    gutterBottom
+                >
+                    Call Conference
+                </Typography>
+                <Typography variant="h6" component="div" className="header2">
+                    You can ask for help now and get it from some of our
+                    specialists.
+                </Typography>
+            </div>
+            <div className="call-container">
                 <div className="video-container">
                     <div className="video">
                         {stream && (
@@ -118,7 +135,7 @@ const CallConference = () => {
                         ) : null}
                     </div>
                 </div>
-                <div className="myId">
+                <div className="contact-container">
                     <TextField
                         id="filled-basic"
                         label="Name"

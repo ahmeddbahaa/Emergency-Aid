@@ -2,7 +2,7 @@
 :root {
     --mainColor: #8e54e9;
     --main2ndColor: #4776e6;
-    --main3rdColor: grey;
+    --main3rdColor: rgb(182, 182, 182);
 }
 
 ::selection {
@@ -22,7 +22,11 @@ body {
     margin: 0;
     padding: 0;
     color: var(--fontColor);
-    background-color: rgba(56, 0, 0, 0.904);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-image: url("https://wallpapertag.com/wallpaper/full/6/2/a/142657-new-clean-background-1920x1080.jpg");
 }
 
 .display-flex {
@@ -57,6 +61,8 @@ body {
 
 /* -------------------------------------------------------- */
 .section-header {
+    width: 600px;
+    margin: 0 auto;
     text-align: center;
     padding-bottom: 40px;
 }
@@ -92,12 +98,17 @@ body {
     gap: 60px;
 }
 
-.home-wrapper .info-cards, 
-.home-wrapper .home-services, 
+.home-wrapper .info-cards,
+.home-wrapper .home-services,
 .home-wrapper .features-section,
 .home-wrapper .plans-section,
 .home-wrapper .subscription-section {
     margin: 100px 0;
+}
+
+.home-wrapper .subscription-section {
+    background-color: white;
+    padding: 40px 0;
 }
 
 .services .services-cards {
@@ -135,25 +146,43 @@ body {
 /* ----- FOOTER END ----- */
 /* -------------------------------------------------------- */
 /* ----- CALL CONFERENCE START ----- */
-.container {
+.call-conference-section {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-image: url("https://wallpapertag.com/wallpaper/full/6/2/a/142657-new-clean-background-1920x1080.jpg");
+}
+
+.call-conference-section .section-header {
+    padding: 40px 0;
+}
+
+.call-conference-section .call-container {
     display: grid;
     grid-template-columns: 7fr 3fr;
 }
 
-.myId {
+.call-container .video-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    margin-left: 10rem;
+}
+
+.video-container .video video {
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.call-container .contact-container {
     margin-right: 5rem;
     border-radius: 5px;
-    background: #c9d6ff; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-        to right,
-        #e2e2e2,
-        #c9d6ff
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-        to right,
-        #e2e2e2,
-        #c9d6ff
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #c9d6ff;
+    background: -webkit-linear-gradient(to right, #e2e2e2, #c9d6ff);
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
 
     padding: 2rem;
     display: grid;
@@ -161,37 +190,15 @@ body {
     align-content: center;
 }
 
-.call-button {
+.contact-container .call-button {
     text-align: center;
     margin-top: 2rem;
 }
 
-.video-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-content: center;
-    margin-top: 10rem;
-    margin-left: 10rem;
-}
-
-.caller {
+.contact-container .caller {
     text-align: center;
-    color: #fff;
+    color: var(--main3rdColor);
 }
 
-.call-conference-section {
-    background: #4776e6; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-        to right,
-        #8e54e9,
-        #4776e6
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-        to right,
-        #8e54e9,
-        #4776e6
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
 /* ----- CALL CONFERENCE END ----- */
 /* -------------------------------------------------------- */

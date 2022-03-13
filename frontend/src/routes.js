@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Home from "./components/home";
+import CallConference from "./components/call-conference";
 
 import Login from "./components/auth/login";
 import Register from "./components/auth/register";
@@ -13,6 +14,7 @@ const routes = () => {
     return (
         <Routes>
             <Route exact path="/" element={<Home />} />
+            <Route exact path="/call" element={<CallConference />} />
 
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />

@@ -1,14 +1,12 @@
 /* ----- GLOBAL PROPS START ----- */
 :root {
-    --fontColor: #f2f2f2;
-    --font2ndColor: #999999;
-    --mainColor: #e5890a;
-    --main2ndColor: #9d5c0d;
-    --main3rdColor: #3a3a3a;
+    --mainColor: #8e54e9;
+    --main2ndColor: #4776e6;
+    --main3rdColor: grey;
 }
 
 ::selection {
-    background: var(--main2ndColor);
+    background: var(--mainColor);
 }
 
 ::-webkit-scrollbar {
@@ -24,7 +22,7 @@ body {
     margin: 0;
     padding: 0;
     color: var(--fontColor);
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(56, 0, 0, 0.904);
 }
 
 .display-flex {
@@ -60,17 +58,18 @@ body {
 /* -------------------------------------------------------- */
 .section-header {
     text-align: center;
+    padding-bottom: 40px;
 }
 
 .section-header .header1 {
-    color: blue;
+    color: var(--main2ndColor);
 }
 .section-header .header2 {
-    color: grey;
+    color: var(--main3rdColor);
 }
 /* -------------------------------------------------------- */
 /* ----- HOME ROUT START ----- */
-.home-wrapper .home-section .home-img {
+.home-container .home-section .home-img {
     position: absolute;
     width: 100%;
     top: -100px;
@@ -82,16 +81,23 @@ body {
 
 .home-section .section-container {
     position: relative;
-    text-align: left;
+    text-align: center;
     width: 50%;
     height: 50%;
-    padding: 300px 200px 0 200px;
+    margin: 165px auto;
 }
 
-.home-wrapper .info-cards {
+.home-container .info-cards {
     position: relative;
-    top: 100px;
-    gap: 20px;
+    gap: 60px;
+}
+
+.home-wrapper .info-cards, 
+.home-wrapper .home-services, 
+.home-wrapper .features-section,
+.home-wrapper .plans-section,
+.home-wrapper .subscription-section {
+    margin: 100px 0;
 }
 
 .services .services-cards {
@@ -101,7 +107,7 @@ body {
 
 .info-section {
     height: 100vh;
-    background-color: blue;
+    background-color: linear-gradient(to right, #8e54e9, #4776e6);
     width: 100%;
     gap: 50px;
     justify-content: space-between;
@@ -127,4 +133,65 @@ body {
 }
 
 /* ----- FOOTER END ----- */
+/* -------------------------------------------------------- */
+/* ----- CALL CONFERENCE START ----- */
+.container {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+}
+
+.myId {
+    margin-right: 5rem;
+    border-radius: 5px;
+    background: #c9d6ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #e2e2e2,
+        #c9d6ff
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #e2e2e2,
+        #c9d6ff
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding: 2rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.call-button {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.video-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10rem;
+    margin-left: 10rem;
+}
+
+.caller {
+    text-align: center;
+    color: #fff;
+}
+
+.call-conference-section {
+    background: #4776e6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #8e54e9,
+        #4776e6
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #8e54e9,
+        #4776e6
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/* ----- CALL CONFERENCE END ----- */
 /* -------------------------------------------------------- */

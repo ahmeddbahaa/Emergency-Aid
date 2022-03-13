@@ -1,1 +1,5 @@
 [Sun Mar 13 2022] [ERROR] SEQUELIZE ERROR:  column "name" of relation "specialists" does not exist
+[Sun Mar 13 2022] [ERROR] SEQUELIZE ERROR:  relation "users" does not exist
+[Sun Mar 13 2022] [ERROR] SEQUELIZE ERROR:  relation "users" does not exist
+[Sun Mar 13 2022] [ERROR] SEQUELIZE ERROR:  relation "users" does not exist
+[Sun Mar 13 2022] [ERROR] SEQUELIZE ERROR:  relation "users" does not exist

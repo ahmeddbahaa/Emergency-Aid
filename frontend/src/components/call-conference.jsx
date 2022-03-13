@@ -162,10 +162,14 @@ const CallConference = () => {
                         onChange={(e) => setIdToCall(e.target.value)}
                     />
                     <div className="call-button">
+                        <Typography variant="h7" component="div" gutterBottom>
+                            In call with {idToCall}
+                        </Typography>
+
                         {callAccepted && !callEnded ? (
                             <Button
                                 variant="contained"
-                                color="secondary"
+                                color="primary"
                                 onClick={leaveCall}
                             >
                                 End Call
@@ -179,7 +183,6 @@ const CallConference = () => {
                                 <PhoneIcon fontSize="large" />
                             </IconButton>
                         )}
-                        {idToCall}
                     </div>
                 </div>
                 <div>

@@ -15,7 +15,7 @@ jobs:
           command: npm run install
       - run:
           name: building the project
-          command: npm run build
+          command: export CI=false && npm run build
       - run:
           name: running the project tests
           command: npm run test

@@ -4,11 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./components/home";
 import CallConference from "./components/call-conference";
 
-import Login from "./components/auth/login";
-import Register from "./components/auth/register";
-
 import Error from "./components/error";
-import PageNotFound from "./components/global/page-not-found";
 
 const routes = () => {
     return (
@@ -16,14 +12,11 @@ const routes = () => {
             <Route exact path="/" element={<Home />} />
             <Route exact path="/call" element={<CallConference />} />
 
-            <Route path="/register" element={<Register />} />
-            <Route path="/login" element={<Login />} />
-
             <Route path="/error" element={<Error />} />
 
-            <Route path="" element={<PageNotFound />} />
-            <Route path="*" element={<PageNotFound />} />
-            <Route element={<PageNotFound />} />
+            <Route path="" element={<Error />} />
+            <Route path="*" element={<Error />} />
+            <Route element={<Error />} />
         </Routes>
     );
 };

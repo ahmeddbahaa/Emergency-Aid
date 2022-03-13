@@ -11,55 +11,12 @@ import MenuItem from "@mui/material/MenuItem";
 import Typography from "@mui/material/Typography";
 
 const Header = () => {
-    const navigate = useNavigate();
-    const cookies = new Cookies();
-
-    const [isUserAuthenticated] = useState(cookies.get("isUserAuthenticated"));
-
-    const [isHamburgerOpen, setHamburgerOpen] = useState(false);
-    const [anchorEl, setAnchorEl] = useState(null);
-    const open = Boolean(anchorEl);
-
-    const handleClick = (event) => {
-        setAnchorEl(event.currentTarget);
-    };
-    let screenWidth = window.screen.width;
 
     useEffect(() => {
-        if (screenWidth < 1088) {
-            var logo = document.getElementById("logo-wrapper");
-            window.onscroll = () => {
-                const logoWrapper = document.getElementById("logo-wrapper");
-                if (window.scrollY > 100) {
-                    logoWrapper.classList.add("logo-wrapper-collapsed");
-                    logo.style.paddingLeft = "0";
-                } else {
-                    logoWrapper.classList.remove("logo-wrapper-collapsed");
-                    logo.style.paddingLeft = "35px";
-                }
-            };
-        }
+       
     });
 
-    const toggleHamburger = (toggled) => {
-        var header = document.getElementById("header-section");
-
-        if (toggled) {
-            header.classList.add("header-toggle");
-        } else {
-            header.classList.remove("header-toggle");
-        }
-    };
-
-    const handleClose = () => {
-        setAnchorEl(null);
-    };
-
-    const logout = () => {
-        cookies.remove("authToken");
-        cookies.remove("authenticatedId");
-        cookies.remove("isUserAuthenticated");
-    };
+    
 
     return (
         <section className="header-section" id="header-section">

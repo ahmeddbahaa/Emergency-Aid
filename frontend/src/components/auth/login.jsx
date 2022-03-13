@@ -35,7 +35,7 @@ const Login = () => {
     );
 
     useEffect(() => {
-        document.title = "Login | Henry Golden Cinema";
+        document.title = "Login | Emergency First Aid";
 
         if (isUserAuthenticatedCookie()) {
             navigate("/", {

@@ -107,7 +107,9 @@ body {
 }
 
 .home-wrapper .subscription-section {
-    background-color: white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background-color: rgba(58, 58, 58, 0.4);
     padding: 40px 0;
 }
 
@@ -128,22 +130,6 @@ body {
     height: 100vh;
 }
 /* ----- HOME ROUT END ----- */
-/* -------------------------------------------------------- */
-/* ----- FOOTER START ----- */
-.footer-section {
-    position: relative;
-    height: 70vh;
-    width: 100%;
-    margin-top: 60px;
-    background-color: var(--main3rdColor);
-    z-index: 99;
-}
-
-.footer-section .footer-wrapper {
-    padding: 50px 0;
-}
-
-/* ----- FOOTER END ----- */
 /* -------------------------------------------------------- */
 /* ----- CALL CONFERENCE START ----- */
 .call-conference-section {

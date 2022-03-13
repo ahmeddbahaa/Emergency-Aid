@@ -62,36 +62,41 @@ const Home = () => {
             ) : (
                 <section className="home-route">
                     {/* <Header /> */}
-                    <div className="home-wrapper">
+                    <div className="home-container">
                         <div className="home-section">
-                            <img
-                                src="https://images.pexels.com/photos/7659568/pexels-photo-7659568.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                className="home-img"
-                                alt="home-img"
-                            />
                             <div className="section-container">
-                                <Typography
-                                    variant="h4"
-                                    component="div"
-                                    gutterBottom
+                                <div className="section-header">
+                                    <Typography
+                                        variant="h3"
+                                        component="div"
+                                        className="header1"
+                                        gutterBottom
+                                    >
+                                        Emergency First Aid
+                                    </Typography>
+                                    <Typography
+                                        variant="h6"
+                                        component="div"
+                                        className="header2"
+                                    >
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Tenetur quae quis
+                                        architecto officia similique error iure
+                                        ducimus, nobis rerum hic dolorum culpa
+                                        reiciendis dicta? Fugit voluptatibus
+                                        consequatur ducimus soluta excepturi.
+                                    </Typography>
+                                </div>
+                                <Button
+                                    color="primary"
+                                    variant="outlined"
+                                    size="large"
+                                    onClick={() => navigate("/call")}
                                 >
-                                    Emergency First Aid
-                                </Typography>
-                                <Typography
-                                    variant="h5"
-                                    component="div"
-                                    gutterBottom
-                                >
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Nesciunt, quod, ea eius at
-                                    vero nulla ipsum hic voluptas, dignissimos
-                                    similique nemo! Vel possimus dolorem animi
-                                    quo. Cum architecto sapiente veniam?
-                                </Typography>
-
-                                <button className="btn-1">Get Help!</button>
+                                    Get Help!
+                                </Button>
                             </div>
-                            <div className="whole-wrapper">
+                            <div className="home-wrapper">
                                 <div className="info-cards display-flex flex-row">
                                     <Card sx={{ minWidth: 275 }}>
                                         <CardContent>
@@ -193,7 +198,7 @@ const Home = () => {
                                         </CardActions>
                                     </Card>
                                 </div>
-                                <div className="services">
+                                <div className="home-services">
                                     <div className="section-header">
                                         <Typography
                                             variant="h4"
@@ -204,7 +209,7 @@ const Home = () => {
                                             Our Service Keeps you carefully
                                         </Typography>
                                         <Typography
-                                            variant="h4"
+                                            variant="h6"
                                             component="div"
                                             className="header2"
                                             gutterBottom
@@ -337,7 +342,7 @@ const Home = () => {
                                         </Card>
                                     </div>
                                 </div>
-                                <div className="info-section display-flex flex-row">
+                                <div className="features-section display-flex flex-row">
                                     <img
                                         src="https://images.pexels.com/photos/8413086/pexels-photo-8413086.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                         className="doc-img"
@@ -396,7 +401,7 @@ const Home = () => {
                                             Our Service Keeps you carefully
                                         </Typography>
                                         <Typography
-                                            variant="h4"
+                                            variant="h6"
                                             component="div"
                                             className="header2"
                                             gutterBottom
@@ -407,7 +412,10 @@ const Home = () => {
                                         </Typography>
                                     </div>
                                     <div className="plans-cards display-flex flex-row">
-                                        <Card sx={{ maxWidth: 345 }}>
+                                        <Card
+                                            sx={{ maxWidth: 345 }}
+                                            className="card"
+                                        >
                                             <CardActionArea>
                                                 <CardMedia
                                                     component="img"
@@ -528,39 +536,39 @@ const Home = () => {
                                             </CardActionArea>
                                         </Card>
                                     </div>
-                                    <div className="subscription">
-                                        <div className="section-header">
-                                            <Typography
-                                                variant="h4"
-                                                component="div"
-                                                className="header1"
-                                                gutterBottom
-                                            >
-                                                Our Service Keeps you carefully
-                                            </Typography>
-                                            <Typography
-                                                variant="h4"
-                                                component="div"
-                                                className="header2"
-                                                gutterBottom
-                                            >
-                                                A small river named Duden flows
-                                                by their place and supplies it
-                                                with the necessary regelialia.
-                                            </Typography>
-                                        </div>
+                                </div>
+                                <div className="subscription-section">
+                                    <div className="section-header">
+                                        <Typography
+                                            variant="h4"
+                                            component="div"
+                                            className="header1"
+                                            gutterBottom
+                                        >
+                                            Our Service Keeps you carefully
+                                        </Typography>
+                                        <Typography
+                                            variant="h6"
+                                            component="div"
+                                            className="header2"
+                                            gutterBottom
+                                        >
+                                            A small river named Duden flows by
+                                            their place and supplies it with the
+                                            necessary regelialia.
+                                        </Typography>
+                                    </div>
 
-                                        <div className="subscription-request display-flex flex-row">
-                                            <TextField
-                                                id="outlined-basic"
-                                                label="Outlined"
-                                                variant="outlined"
-                                            />
+                                    <div className="subscription-request display-flex flex-row">
+                                        <TextField
+                                            id="outlined-basic"
+                                            label="Outlined"
+                                            variant="outlined"
+                                        />
 
-                                            <Button variant="outlined">
-                                                Outlined
-                                            </Button>
-                                        </div>
+                                        <Button variant="outlined">
+                                            Outlined
+                                        </Button>
                                     </div>
                                 </div>
                             </div>
